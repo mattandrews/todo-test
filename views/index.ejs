@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<form method="post" action="/test">
+    <input name="something"/>
+    <input type="submit">
+</form>
+
+    <ul>
+        <% messages.forEach(m => { %>
+            <li><%= m.text %> (<%= m.date %>)</li>
+        <% }); %>
+    </ul>
+</body>
+</html>
